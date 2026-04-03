@@ -3,382 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dont gives two fucks | Store</title>
+    <title>Dont gives two fucks | Official D.G.T.F. Merch</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* General Layout & Typography */
-        body { 
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
-            margin: 0; 
-            background-color: #f8f9fa; 
-            color: #212529; 
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&family=Oswald:wght@700&display=swap');
         
-        /* Header Styling */
-        header { 
-            background-color: #111; 
-            color: #fff; 
-            padding: 2.5rem 1rem; 
-            text-align: center; 
-            border-bottom: 4px solid #444;
-        }
-        header h1 { 
-            margin: 0; 
-            font-size: 2.5rem; 
-            text-transform: uppercase; 
-            letter-spacing: 2px; 
-        }
-        header p {
-            margin-top: 0.5rem;
-            color: #aaa;
-            font-size: 1.1rem;
+        body {
+            background-color: #0a0a0a;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
         }
 
-        /* Product Grid */
-        .container { 
-            max-width: 1200px; 
-            margin: 3rem auto; 
-            padding: 0 1rem; 
-        }
-        .product-grid { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-            gap: 2.5rem; 
-        }
+        .dgtf-font { font-family: 'Oswald', sans-serif; text-transform: uppercase; letter-spacing: 2px; }
         
-        /* Individual Product Cards */
-        .product-card { 
-            background: #fff; 
-            border-radius: 8px; 
-            overflow: hidden; 
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08); 
-            transition: transform 0.2s ease, box-shadow 0.2s ease; 
-            display: flex; 
-            flex-direction: column;
-        }
-        .product-card:hover { 
-            transform: translateY(-5px); 
-            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-        }
-        
-        /* Image Styling */
-        .product-image { 
-            width: 100%; 
-            height: 300px; 
-            object-fit: cover; 
-            background-color: #e9ecef; 
-            border-bottom: 1px solid #eee;
-        }
-        
-        /* Product Info Area */
-        .product-info { 
-            padding: 1.5rem; 
-            display: flex; 
-            flex-direction: column; 
-            flex-grow: 1; 
-        }
-        .product-title { 
-            margin: 0 0 0.5rem 0; 
-            font-size: 1.4rem; 
-            font-weight: 700;
-        }
-        .product-description { 
-            color: #495057; 
-            font-size: 1rem; 
-            line-height: 1.5;
-            margin-bottom: 1.5rem; 
-            flex-grow: 1; 
-        }
-        .product-price { 
-            font-size: 1.5rem; 
-            font-weight: bold; 
-            margin-bottom: 1.2rem; 
-            color: #111; 
-        }
-        
-        /* Checkout Button */
-        .buy-button { 
-            background-color: #111; 
-            color: #fff; 
-            border: none; 
-            padding: 0.85rem; 
-            font-size: 1.1rem; 
-            cursor: pointer; 
-            border-radius: 4px; 
-            text-transform: uppercase; 
-            font-weight: bold; 
-            width: 100%; 
-            transition: background 0.2s; 
-        }
-        .buy-button:hover { 
-            background-color: #333; 
+        .neon-border {
+            border: 1px solid #39FF14;
+            box-shadow: 0 0 10px rgba(57, 255, 20, 0.2);
         }
 
-        /* Footer */
-        footer { 
-            text-align: center; 
-            padding: 2rem; 
-            background-color: #111; 
-            color: #fff; 
-            margin-top: 4rem; 
+        .product-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+            border-color: #39FF14;
         }
-        footer a { 
-            color: #adb5bd; 
-            text-decoration: none; 
-            font-weight: bold;
-            transition: color 0.2s;
-        }
-        footer a:hover {
-            color: #fff;
+
+        .hero-gradient {
+            background: linear-gradient(180deg, rgba(10,10,10,0) 0%, rgba(10,10,10,1) 100%),
+                        url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=2070');
+            background-size: cover;
+            background-position: center;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Dont gives two fucks</h1>
-    <p>Official D.G.T.F. Merchandise</p>
-</header>
-
-<div class="container">
-    <div class="product-grid">
-
-        <div class="product-card">
-            <img class="product-image" src="1758301407371.jpg" alt="Break Free Skull Tee">
-            <div class="product-info">
-                <h2 class="product-title">D.G.T.F. Break Free Skull Tee</h2>
-                <p class="product-description">Black t-shirt featuring the shattered skull and neon green peace sign eye.</p>
-                <div class="product-price">$25.00</div>
-                <button class="buy-button" onclick="window.location.href='#'">Buy Now</button>
-            </div>
+    <nav class="p-6 flex justify-between items-center border-b border-zinc-800 bg-black/90 sticky top-0 z-50">
+        <h1 class="dgtf-font text-2xl font-black">D.G.T.F<span class="text-[#39FF14]">.</span></h1>
+        <div class="space-x-6 text-sm font-bold uppercase tracking-widest">
+            <a href="#shop" class="hover:text-[#39FF14]">Shop</a>
+            <a href="https://givestwofucks.work" class="hover:text-[#39FF14]">Consulting</a>
         </div>
+    </nav>
 
-        <div class="product-card">
-            <img class="product-image" src="1774686391735.png" alt="Toxic Bloom Tee">
-            <div class="product-info">
-                <h2 class="product-title">Toxic Bloom Tee</h2>
-                <p class="product-description">Black t-shirt featuring the D.G.T.F. Toxic Bloom graphic.</p>
-                <div class="product-price">$25.00</div>
-                <button class="buy-button" onclick="window.location.href='#'">Buy Now</button>
-            </div>
+    <section class="h-[80vh] flex items-center justify-center text-center hero-gradient px-4">
+        <div class="max-w-3xl">
+            <h2 class="dgtf-font text-6xl md:text-8xl mb-4 leading-none">Dont gives two fucks</h2>
+            <p class="text-zinc-400 text-lg md:text-xl mb-8 uppercase tracking-widest">Official D.G.T.F. Merchandise • Built for the Shop & the Streets</p>
+            <a href="#shop" class="bg-[#39FF14] text-black px-10 py-4 font-black uppercase text-lg hover:bg-white transition-colors">Shop the Drop</a>
         </div>
+    </section>
 
-        <div class="product-card">
-            <img class="product-image" src="1774686396250.png" alt="Fiery Rebel Tee">
-            <div class="product-info">
-                <h2 class="product-title">Fiery Rebel Tee</h2>
-                <p class="product-description">Black t-shirt featuring the D.G.T.F. Fiery Rebel design.</p>
-                <div class="product-price">$25.00</div>
-                <button class="buy-button" onclick="window.location.href='#'">Buy Now</button>
+    <main id="shop" class="max-w-7xl mx-auto py-20 px-6">
+        <h3 class="dgtf-font text-3xl mb-12 border-l-4 border-[#39FF14] pl-4">The Lineup</h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            
+            <div class="product-card border border-zinc-800 p-4 bg-zinc-900/50">
+                <div class="aspect-square bg-zinc-800 mb-4 flex items-center justify-center text-zinc-500">[ Break Free Skull Tee ]</div>
+                <h4 class="dgtf-font text-xl">Break Free Skull Tee</h4>
+                <p class="text-zinc-400 text-sm my-2">Shattered skull with neon green peace sign eye.</p>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="text-[#39FF14] font-bold text-xl">$25.00</span>
+                    <button class="border border-white px-4 py-2 text-xs font-bold uppercase hover:bg-white hover:text-black transition">Buy Now</button>
+                </div>
             </div>
-        </div>
 
-        <div class="product-card">
-            <img class="product-image" src="1774686400118.png" alt="Rebel Love Tee">
-            <div class="product-info">
-                <h2 class="product-title">Rebel Love Tee</h2>
-                <p class="product-description">Black t-shirt featuring the D.G.T.F. Rebel Love design.</p>
-                <div class="product-price">$25.00</div>
-                <button class="buy-button" onclick="window.location.href='#'">Buy Now</button>
+            <div class="product-card border border-zinc-800 p-4 bg-zinc-900/50">
+                <div class="aspect-square bg-zinc-800 mb-4 flex items-center justify-center text-zinc-500">[ Toxic Bloom Tee ]</div>
+                <h4 class="dgtf-font text-xl">Toxic Bloom Tee</h4>
+                <p class="text-zinc-400 text-sm my-2">The signature D.G.T.F. Toxic Bloom graphic.</p>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="text-[#39FF14] font-bold text-xl">$25.00</span>
+                    <button class="border border-white px-4 py-2 text-xs font-bold uppercase hover:bg-white hover:text-black transition">Buy Now</button>
+                </div>
             </div>
-        </div>
 
-        <div class="product-card">
-            <img class="product-image" src="1774686432992.png" alt="Original Skeleton Peace Black Shirt">
-            <div class="product-info">
-                <h2 class="product-title">Original Skeleton Peace Tee</h2>
-                <p class="product-description">The classic black t-shirt with the original skeleton peace sign and white lettering.</p>
-                <div class="product-price">$25.00</div>
-                <button class="buy-button" onclick="window.location.href='#'">Buy Now</button>
+            <div class="product-card border border-zinc-800 p-4 bg-zinc-900/50">
+                <div class="aspect-square bg-zinc-800 mb-4 flex items-center justify-center text-zinc-500">[ Premium Hoodie ]</div>
+                <h4 class="dgtf-font text-xl">Premium Black Hoodie</h4>
+                <p class="text-zinc-400 text-sm my-2">Heavyweight pullover built for the shop.</p>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="text-[#39FF14] font-bold text-xl">$55.00</span>
+                    <button class="border border-white px-4 py-2 text-xs font-bold uppercase hover:bg-white hover:text-black transition">Buy Now</button>
+                </div>
             </div>
-        </div>
 
-        <div class="product-card">
-            <img class="product-image" src="1758300596201.jpg" alt="Black Shirt Purple Letters">
-            <div class="product-info">
-                <h2 class="product-title">Classic Black Tee (Purple Letters)</h2>
-                <p class="product-description">Standard black D.G.T.F. t-shirt featuring dark purple lettering.</p>
-                <div class="product-price">$25.00</div>
-                <button class="buy-button" onclick="window.location.href='#'">Buy Now</button>
+            <div class="product-card border border-zinc-800 p-4 bg-zinc-900/50">
+                <div class="aspect-square bg-zinc-800 mb-4 flex items-center justify-center text-zinc-500">[ Skeleton Snapback ]</div>
+                <h4 class="dgtf-font text-xl">Skeleton Peace Snapback</h4>
+                <p class="text-zinc-400 text-sm my-2">Rugged black cap with signature patch.</p>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="text-[#39FF14] font-bold text-xl">$22.00</span>
+                    <button class="border border-white px-4 py-2 text-xs font-bold uppercase hover:bg-white hover:text-black transition">Buy Now</button>
+                </div>
             </div>
-        </div>
 
-        <div class="product-card">
-            <img class="product-image" src="1774686362730.png" alt="Black Shirt White Letters">
-            <div class="product-info">
-                <h2 class="product-title">Classic Black Tee (White Letters)</h2>
-                <p class="product-description">Standard black D.G.T.F. t-shirt featuring bold white lettering.</p>
-                <div class="product-price">$25.00</div>
-                <button class="buy-button" onclick="window.location.href='#'">Buy Now</button>
+            <div class="product-card border border-zinc-800 p-4 bg-zinc-900/50">
+                <div class="aspect-square bg-zinc-800 mb-4 flex items-center justify-center text-zinc-500">[ Mug & Tumbler Set ]</div>
+                <h4 class="dgtf-font text-xl">Mug & Tumbler Set</h4>
+                <p class="text-zinc-400 text-sm my-2">Matte black coffee mug and insulated tumbler.</p>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="text-[#39FF14] font-bold text-xl">$30.00</span>
+                    <button class="border border-white px-4 py-2 text-xs font-bold uppercase hover:bg-white hover:text-black transition">Buy Now</button>
+                </div>
             </div>
-        </div>
 
-        <div class="product-card">
-            <img class="product-image" src="1774686413752.png" alt="Skeleton Peace Black Shirt">
-            <div class="product-info">
-                <h2 class="product-title">Skeleton Peace Tee (Black)</h2>
-                <p class="product-description">Black t-shirt featuring the skeleton peace sign graphic.</p>
-                <div class="product-price">$25.00</div>
-                <button class="buy-button" onclick="window.location.href='#'">Buy Now</button>
+            <div class="product-card border border-zinc-800 p-4 bg-zinc-900/50 text-center flex flex-col justify-center items-center">
+                <h4 class="dgtf-font text-xl mb-4">Need Decals?</h4>
+                <p class="text-zinc-400 text-sm mb-4">High-quality vinyl for your toolbox.</p>
+                <span class="text-[#39FF14] font-bold text-xl mb-4">$5.00</span>
+                <button class="bg-white text-black px-6 py-2 font-bold uppercase text-xs">Add to Cart</button>
             </div>
+
         </div>
+    </main>
 
-        <div class="product-card">
-            <img class="product-image" src="1774686417952.png" alt="Skeleton Peace White Shirt">
-            <div class="product-info">
-                <h2 class="product-title">Skeleton Peace Tee (White)</h2>
-                <p class="product-description">Crisp white t-shirt featuring the skeleton peace sign graphic.</p>
-                <div class="product-price">$25.00</div>
-                <button class="buy-button" onclick="window.location.href='#'">Buy Now</button>
-            </div>
+    <footer class="border-t border-zinc-800 py-20 px-6 text-center">
+        <div class="mb-8">
+            <h2 class="dgtf-font text-3xl mb-2">D.G.T.F. Consulting</h2>
+            <p class="text-zinc-500 max-w-md mx-auto mb-6">Expertise in Right to Repair and Precision Ag. When you need it done right.</p>
+            <a href="https://givestwofucks.work" class="text-[#39FF14] hover:underline font-bold tracking-widest">VISIT THE HUB</a>
         </div>
-
-        <div class="product-card">
-            <img class="product-image" src="1758302408390.jpg" alt="White Tee Logo">
-            <div class="product-info">
-                <h2 class="product-title">Classic White Logo Tee</h2>
-                <p class="product-description">Standard white t-shirt featuring the official D.G.T.F. logo.</p>
-                <div class="product-price">$25.00</div>
-                <button class="buy-button" onclick="window.location.href='#'">Buy Now</button>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <img class="product-image" src="1774686374285.png" alt="White Tee Dark Purple Letters">
-            <div class="product-info">
-                <h2 class="product-title">Classic White Tee (Purple Letters)</h2>
-                <p class="product-description">White t-shirt featuring the D.G.T.F. logo with dark purple lettering.</p>
-                <div class="product-price">$25.00</div>
-                <button class="buy-button" onclick="window.location.href='#'">Buy Now</button>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <img class="product-image" src="1774686368513.png" alt="White Hooded Tee">
-            <div class="product-info">
-                <h2 class="product-title">White Hooded Logo Tee</h2>
-                <p class="product-description">Lightweight white hooded t-shirt featuring the official logo.</p>
-                <div class="product-price">$30.00</div>
-                <button class="buy-button" onclick="window.location.href='#'">Buy Now</button>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <img class="product-image" src="1758300483357.jpg" alt="Black Hoodie">
-            <div class="product-info">
-                <h2 class="product-title">Premium Black Hoodie</h2>
-                <p class="product-description">Heavyweight black pullover hoodie built for the shop or the streets.</p>
-                <div class="product-price">$55.00</div>
-                <button class="buy-button" onclick="window.location.href='#'">Buy Now</button>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <img class="product-image" src="1758300590257.jpg" alt="Black Hoodie Purple Letters">
-            <div class="product-info">
-                <h2 class="product-title">Black Hoodie (Purple Letters)</h2>
-                <p class="product-description">Heavyweight black pullover hoodie featuring dark purple D.G.T.F. lettering.</p>
-                <div class="product-price">$55.00</div>
-                <button class="buy-button" onclick="window.location.href='#'">Buy Now</button>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <img class="product-image" src="1774686420783.png" alt="Skeleton Peace Black Hat">
-            <div class="product-info">
-                <h2 class="product-title">Skeleton Peace Snapback (Black)</h2>
-                <p class="product-description">Rugged black cap featuring the skeleton peace sign patch.</p>
-                <div class="product-price">$22.00</div>
-                <button class="buy-button" onclick="window.location.href='#'">Buy Now</button>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <img class="product-image" src="1774686128925.png" alt="Black Hat White Letters">
-            <div class="product-info">
-                <h2 class="product-title">Classic Black Cap (White Letters)</h2>
-                <p class="product-description">Black snapback hat with bold white D.G.T.F. lettering.</p>
-                <div class="product-price">$22.00</div>
-                <button class="buy-button" onclick="window.location.href='#'">Buy Now</button>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <img class="product-image" src="1774686338811.png" alt="White Hat Dark Purple Letters">
-            <div class="product-info">
-                <h2 class="product-title">Classic White Cap (Purple Letters)</h2>
-                <p class="product-description">Clean white snapback hat with dark purple D.G.T.F. lettering.</p>
-                <div class="product-price">$22.00</div>
-                <button class="buy-button" onclick="window.location.href='#'">Buy Now</button>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <img class="product-image" src="1758300576116.jpg" alt="White Hat">
-            <div class="product-info">
-                <h2 class="product-title">Classic White Hat</h2>
-                <p class="product-description">Clean white cap featuring the official logo.</p>
-                <div class="product-price">$22.00</div>
-                <button class="buy-button" onclick="window.location.href='#'">Buy Now</button>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <img class="product-image" src="1774686423686.png" alt="Black Beanie Peace">
-            <div class="product-info">
-                <h2 class="product-title">Skeleton Peace Beanie</h2>
-                <p class="product-description">Warm black knit beanie featuring the skeleton peace sign.</p>
-                <div class="product-price">$20.00</div>
-                <button class="buy-button" onclick="window.location.href='#'">Buy Now</button>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <img class="product-image" src="1774686119375.png" alt="Black Coffee Mug and Tumbler">
-            <div class="product-info">
-                <h2 class="product-title">Mug & Tumbler Set</h2>
-                <p class="product-description">Matte black coffee mug and insulated tumbler with the classic logo.</p>
-                <div class="product-price">$30.00</div>
-                <button class="buy-button" onclick="window.location.href='#'">Buy Now</button>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <img class="product-image" src="1774686426370.png" alt="Black Coffee Skeleton Peace">
-            <div class="product-info">
-                <h2 class="product-title">Skeleton Peace Coffee Mug</h2>
-                <p class="product-description">Matte black ceramic mug featuring the skeleton peace sign.</p>
-                <div class="product-price">$15.00</div>
-                <button class="buy-button" onclick="window.location.href='#'">Buy Now</button>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <img class="product-image" src="1774686429120.png" alt="Black Tumbler Skeleton Peace">
-            <div class="product-info">
-                <h2 class="product-title">Skeleton Peace Tumbler</h2>
-                <p class="product-description">Black insulated tumbler to keep your drinks hot or cold on the job.</p>
-                <div class="product-price">$25.00</div>
-                <button class="buy-button" onclick="window.location.href='#'">Buy Now</button>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <img class="product-image" src="1774686321246.png" alt="Logo Sticker">
-            <div class="product-info">
-                <h2 class="product-title">D.G.T.F. Logo Decal</h2>
-                <p class="product-description">High-quality vinyl sticker with a white background. Perfect for the toolbox.</p>
-                <div class="product-price">$5.00</div>
-                <button class="buy-button" onclick="window.location.href='#'">Buy Now</button>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-<footer>
-    <p>&copy; 2026 Dont gives two fucks. All rights reserved.</p>
-    <p>Visit our main hub: <a href="https://givestwofucks.work" target="_blank">givestwofucks.work</a></p>
-</footer>
+        <p class="text-zinc-700 text-xs uppercase tracking-widest">© 2026 Dont gives two fucks. State National Powered.</p>
+    </footer>
 
 </body>
 </html>
+
